@@ -18,7 +18,7 @@ st.set_page_config(
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("USA Project/USA Housing Dataset.csv")
+    df = pd.read_csv(r"USA Housing Dataset.csv")
 
     # Convert date
     df["date"] = pd.to_datetime(
